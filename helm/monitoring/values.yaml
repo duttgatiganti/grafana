@@ -1,0 +1,14 @@
+
+controller:
+  replicaCount: 1     
+  image:             
+    repository: dutt1/mt1
+    tag: 1
+    pullPolicy: IfNotPresent
+
+replicaCount: 1        
+image:
+  repository: acr3571.azurecr.io/grafana
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "latest"   
