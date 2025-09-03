@@ -17,7 +17,7 @@ spec:
           image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
           imagePullPolicy: Always
           ports:
-            - containerPort: 8080
+            - containerPort: 3000
           
 
 
@@ -33,5 +33,5 @@ spec:
   ports:
     - protocol: "TCP"
       port: 80
-      targetPort: 8080 
+      targetPort: 3000 
   type: LoadBalancer # type of the service.
